@@ -1,0 +1,101 @@
+.hero {
+    background-color: #809091;
+    min-height: 300px;
+    border-radius: 15px;
+    height: 300px;
+}
+.top-hero {
+    height: 80%;
+}
+
+.title-name {
+    color: white;
+    font-size: 100px;
+    font-weight: 300;
+}
+
+.bottom-hero {
+    height: 20%;
+}
+
+.circle-img{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    /* margin-right: 50px; */
+}
+
+.circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.5;
+    filter: grayscale(99%);
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+
+.role {
+    width: 40%;
+    color: white;
+}
+
+.only-border {
+    border: 1px solid white;
+    border-radius: 25px;
+    padding:0 10px;
+    margin: 0 10px;
+}
+
+
+
+
+@media (min-width: 576px) { 
+
+    
+
+ }
+ 
+
+ @media (max-width: 575.98px) { 
+    .h100m {
+        height: unset;
+    }
+    .hero {
+        width: 90%;
+        background-color: #809091;
+        min-height: 300px;
+        border-radius: 15px;
+        height:350px;
+        /* height: 300px; */
+    }
+
+
+
+    .title-name {
+        color: white;
+        font-size: 50px;
+    
+    }
+
+    .top-hero {
+        height: 75%;
+    }
+    
+    .bottom-hero {
+        height: 25%;
+    }
+
+    .role {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .role p {
+        margin-top: 8px;
+    }
+
+  }
