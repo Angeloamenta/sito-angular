@@ -1,0 +1,19 @@
+.contact {
+    background-color: #9989be;
+    margin-top: 10px;
+    border-radius: 15px;
+    min-height: 250px;
+
+}
+
+
+
+
+@media (max-width: 575.98px) { 
+    
+    .contact {
+        width: 90%;
+    }
+   
+
+  }
