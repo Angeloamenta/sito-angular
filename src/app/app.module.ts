@@ -13,6 +13,9 @@ import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,12 +25,14 @@ import { FooterComponent } from './components/footer/footer.component';
     ProjectsServicesComponent,
     ContactComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProjectsServicesService } from 'src/app/services/projects-services.service';
 
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -18,6 +19,8 @@ projects:any
    
     this.projects = this.projectservice.projects
     console.log(this.projects);
+    
+    
     
   }
 
