@@ -8,6 +8,9 @@
     border-radius: 25px;
 }
 
+.mr-3 {
+    margin-right: 10px ;
+}
 
 @media (max-width: 575.98px) { 
     

@@ -6,13 +6,17 @@
 
 }
 
-
+.contact-title {
+    border: 0.5px solid white;
+    border-radius: 15px;
+    padding: 0 10px;
+}
 
 
 @media (max-width: 575.98px) { 
     
     .contact {
-        width: 90%;
+        width: 95%;
     }
    
 

@@ -11,6 +11,9 @@ import { ProjectsServicesComponent } from './services/projects-services/projects
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ProjectPageComponent } from './pages/project-page/project-page.component';
 
 
 
@@ -26,6 +29,9 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     AboutComponent,
     FooterComponent,
+    HomeComponent,
+    AboutPageComponent,
+    ProjectPageComponent,
     
   ],
   imports: [

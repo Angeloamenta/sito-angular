@@ -1,8 +1,14 @@
 <div class="container header">
     <div class="row">
-        <div class="col-5 d-flex text-light justify-content-between align-items-center homepage">
+        <div *ngIf="project" class="col-3 mr-3 d-flex text-light justify-content-between align-items-center homepage">
+            <p class="m-0 p-0">Project</p>
+        </div>
+        <div *ngIf="about" class="col-3 mr-3 d-flex text-light justify-content-between align-items-center homepage">
+            <p class="m-0 p-0">About</p>
+        </div>
+        <a routerLink="/" class="col-5 d-flex text-light justify-content-between align-items-center homepage">
             <p class="m-0 p-0">Home Page</p>
             <i class="m-0 p-0 fa-solid fa-circle-arrow-right"></i>
-        </div>
+        </a>
     </div>
 </div>

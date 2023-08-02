@@ -6,6 +6,10 @@
 
 }
 
+.study-now h4 {
+    color: white;
+}
+
 
 .about-title {
     border: 0.5px solid white;
@@ -13,10 +17,20 @@
     padding: 0 10px;
 }
 
+.study-now img {
+    height: 50px;
+    object-fit: contain;
+}
+
 @media (max-width: 575.98px) { 
     
     .about {
-        width: 90%;
+        width: 95%;
+    }
+
+    .study-now img {
+        height: 50px;
+        object-fit: contain;
     }
    
 

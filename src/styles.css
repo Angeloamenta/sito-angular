@@ -17,3 +17,11 @@ body {
 .h100m {
     height: 100%;
 }
+
+.h100 {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
