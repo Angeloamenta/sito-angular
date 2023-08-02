@@ -25,3 +25,7 @@ body {
 a {
     text-decoration: none;
 }
+
+a:hover {
+    color: yellow !important;
+}
