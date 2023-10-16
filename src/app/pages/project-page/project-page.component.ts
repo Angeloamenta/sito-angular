@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class ProjectPageComponent {
 
+  onActivate(event:any) {
+    // window.scroll(0,0);
+ console.log(event);
+ 
+    window.scroll({ 
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth' 
+     });
+ }
+
 }

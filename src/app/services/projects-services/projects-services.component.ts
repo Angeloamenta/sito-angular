@@ -7,12 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ProjectsServicesComponent {
 
-  projects = [
-    {
-      name: 'titolo',
-      description: 'desc',
-      image: 'firefox_9dL2H9Ff4c.png'
-    }
-  ]
+  
 
 }

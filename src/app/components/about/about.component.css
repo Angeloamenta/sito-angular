@@ -1,5 +1,6 @@
 .about {
-    background-color: #DFB928;
+    /* background-color: #DFB928; */
+    background-color: var(--lightgray);
     margin-top: 10px;
     border-radius: 15px;
     min-height: 250px;

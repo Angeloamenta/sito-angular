@@ -1,8 +1,11 @@
 .contact {
-    background-color: #9989be;
+    /* background-color: #9989be; */
+    background-color: var(--gray);
     margin-top: 10px;
     border-radius: 15px;
     min-height: 250px;
+    position: relative;
+    overflow: clip;
 
 }
 
