@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProjectsServicesService } from 'src/app/services/projects-services.service';
+
 
 @Component({
   selector: 'app-project-page',
@@ -6,6 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./project-page.component.css']
 })
 export class ProjectPageComponent {
+
+  constructor(private project: ProjectsServicesService) { }
+  
+myProjects:any
+
+  ngOnInit() {
+  
+    this.myProjects = this.project.projects
+
+}
 
   onActivate(event:any) {
     // window.scroll(0,0);

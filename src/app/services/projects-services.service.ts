@@ -11,7 +11,9 @@ export class ProjectsServicesService {
     {
       name: 'titolo',
       description: 'desc',
-      image: '../../../assets/img/firefox_9dL2H9Ff4c.png'
+      image: '../../assets/img/regeneramac1.png'
     }
   ]
+
+
 }

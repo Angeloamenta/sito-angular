@@ -20,7 +20,7 @@
 html, body { height: 100%; }
 body {
      margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
-     background-color: white;
+     background-color: var(--gray);
      height: 100vh;
      padding-top: 10px;
      padding-bottom: 10px;
@@ -40,7 +40,7 @@ a {
 
 
  text-web {
-    color: var(--gray);
+    color: var(--white);
  }
 
  a {
@@ -52,7 +52,7 @@ a {
  }
 
  .homepage {
-    border: 1px solid var(--gray);
+    border: 1px solid var(--white);
     border-radius: 25px;
     padding: 0px 5px
 }
