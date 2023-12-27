@@ -5,18 +5,11 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  },
-   {
-     path: 'about',
-     component: AboutPageComponent
-   },
-   {
-    path: 'project',
-    component: ProjectPageComponent
-  },
+  {path: '',component: HomeComponent},
+  {path: 'about',component: AboutPageComponent},
+  { path: 'project', component: ProjectPageComponent },
+  {path: 'project/:id',component: ProjectPageComponent}
+  
 
 ];
 

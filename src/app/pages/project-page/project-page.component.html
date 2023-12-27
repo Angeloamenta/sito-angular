@@ -1,8 +1,40 @@
-<div class="container">
+
+
+<div *ngIf="!isProject; else singleProject" class="container pt-3">
     <div class="row">
-        <div *ngFor="let project of myProjects" class="col-4">
-            <p>{{project.name}}</p>
-            <img class="img-project" [src]="project.image" alt="">
+        <div *ngFor="let project of myProjects; index as i" class=" project-card col-4">
+            <a routerLink="/project/{{i}}" class="container">
+                <div class="row p-2">
+                    <div class="col inner-project-card p-2 text-center text-light">
+                         <h2>{{project.name}}</h2>
+                        <img class="img-project" [src]="project.image" alt="">
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
+
+<ng-template #singleProject>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center text-light p-5">
+                <h1>{{mySingleProject.name}}</h1>
+            </div>
+            <div class="col-6 p-4">
+                <p class="text-light">
+                    {{mySingleProject.description}}
+                </p>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-center">
+                <img class="w80" src="{{mySingleProject.image}}" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <a routerLink="/project" class=" button-link pt-3 col-12 d-flex text-light justify-content-between align-items-center">
+            <p class="m-0 project-title">Progetti</p>
+            <i class="m-0 p-0 fa-solid fa-circle-arrow-right"></i>
+        </a>
+        </div>
+    </div>
+</ng-template>

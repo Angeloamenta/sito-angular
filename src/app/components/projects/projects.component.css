@@ -3,7 +3,8 @@
     /* border: 0.5px solid white; */
     background-color: var(--black);
     border-radius: 15px;
-    min-height: 350px;
+    min-height: 250px;
+    overflow: hidden;
 }
 
 .project-title {
@@ -13,7 +14,14 @@
 }
 
 
+#carouselExampleIndicators .carousel-inner .carousel-item.active {
+    display: flex !important;
+    justify-content: center;
+}
 
+#carouselExampleIndicators .carousel-inner .carousel-item img {
+    width: 80% !important;
+}
 
 @media (max-width: 575.98px) { 
     

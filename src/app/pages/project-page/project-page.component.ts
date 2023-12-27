@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ProjectsServicesService } from 'src/app/services/projects-services.service';
 
 
@@ -9,13 +10,30 @@ import { ProjectsServicesService } from 'src/app/services/projects-services.serv
 })
 export class ProjectPageComponent {
 
-  constructor(private project: ProjectsServicesService) { }
+  constructor(private project: ProjectsServicesService, private route: ActivatedRoute) { }
   
-myProjects:any
+  myProjects: any;
+  mySingleProject: any;
+  isProject= true;
 
   ngOnInit() {
   
-    this.myProjects = this.project.projects
+    this.myProjects = this.project.getProjects()
+    this.route.snapshot.paramMap.get('id')
+
+    if (this.route.snapshot.paramMap.get('id')) {
+      this.isProject = true
+      this.mySingleProject = this.project.getProject(parseInt(this.route.snapshot.paramMap.get('id')!))
+      console.log("project",this.mySingleProject);
+      
+      
+    } else {
+      this.isProject = false
+    }
+
+    // this.isProject = !this.route.snapshot.paramMap.get('id') ? false : true
+    console.log(this.route.snapshot.paramMap.get('id'));
+    
 
 }
 

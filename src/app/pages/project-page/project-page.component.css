@@ -6,7 +6,27 @@
     width: 100%;
 }
 
+.button-link {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px;
+    height: 20px;
+    width: 150px ;
+}
+
 .project-card {
     border: 0.5px solid var(--gray);
     border-radius: 25px;
+    animation: 1s;
+    transition: 0.5s;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.inner-project-card {
+    background-color: var(--black);
+    border-radius: 15px;
+    min-height: 300px;
 }

@@ -56,3 +56,11 @@ a {
     border-radius: 25px;
     padding: 0px 5px
 }
+
+.w80 {
+    width: 80%;
+}
+
+.w50 {
+    width: 50%;
+}

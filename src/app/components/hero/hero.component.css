@@ -34,7 +34,7 @@
     height: 100%;
     object-fit: cover;
     scale: 1.5;
-    filter: contrast(90%) grayscale(100%);;
+     filter: contrast(120%); /*grayscale(100%); */
     position: absolute;
     top: 10px;
     left: 3px;
