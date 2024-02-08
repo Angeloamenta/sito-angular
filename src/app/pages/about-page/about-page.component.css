@@ -1,0 +1,125 @@
+.row-about {
+    min-height: 400px;
+}
+
+.text-about {
+    font-size: 1.2em;
+    vertical-align: 18px;
+}
+
+.title-about {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.about-sx {
+    /* background-color: var(--orange); */
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.about-img {
+    background-color: black;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-bottom {
+    border-radius: 25px;
+    background-color: black;
+}
+
+.ido {
+    color: lightgray;
+    font-size: 20px;
+    font-weight: 100;
+    margin:  30px 0;
+}
+
+ul li {
+    margin-bottom: 35px;
+}
+
+ul li:hover {
+    text-decoration: underline 4px solid var(--orange);
+    padding-bottom: 1px;
+}
+
+ul li:hover .dot-orange {
+   visibility: visible;
+
+}
+
+.my-work {
+    color: white;
+    margin: 0;
+    font-size: 60px;
+}
+
+.dot-orange {
+    visibility: hidden;
+    background-color: var(--orange);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: visibility 0s, opacity 0.5s linear;
+    margin-right: 10px;
+
+}
+
+.black {
+    position: absolute;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.experience {
+    font-weight: 200;
+    font-size: 30px;
+    color: gray;
+}
+
+.experience-job {
+    border-bottom: 1px solid lightgrey;
+}
+
+.job-time {
+    font-weight: 200;
+    font-size: 15px;
+    color: gray;
+}
+
+.job-title {
+    font-size: 15px;
+}
+
+.list-jobs {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 575.98px) { 
+    
+   .my-work {
+    color: white;
+    margin: 0;
+    font-size: 30px;
+}
+
+.container-about-bottom {
+    padding: 15px;
+}
+
+.dot-orange {
+    margin-right: 0;
+}
+
+.list-jobs {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+}

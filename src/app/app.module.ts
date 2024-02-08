@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
+import { ContactPagesComponent } from './pages/contact-pages/contact-pages.component';
 
 
 
@@ -32,6 +33,7 @@ import { ProjectPageComponent } from './pages/project-page/project-page.componen
     HomeComponent,
     AboutPageComponent,
     ProjectPageComponent,
+    ContactPagesComponent,
     
   ],
   imports: [

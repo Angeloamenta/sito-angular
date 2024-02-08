@@ -11,6 +11,10 @@ import { ActivatedRoute } from '@angular/router';
 export class HeaderComponent {
 
   currentRoute = "";
+  home: boolean | undefined;
+  about : boolean | undefined;
+  project: boolean | undefined;
+
   constructor(private router:Router, private location:Location) {
     
     this.router.events.subscribe((event: Event) => {
@@ -18,23 +22,31 @@ export class HeaderComponent {
             // Show progress spinner or progress bar
             console.log('Route change detected');
             this.currentRoute = event.url
-            console.log(this.currentRoute);
+          console.log(this.currentRoute);
+          console.log(
+                "home", this.home,
+                "project", this.project,
+                "about",this.about,
+              );
 
-            if (this.currentRoute == "") {
+            if (this.currentRoute == "/") {
               this.project = false
               this.about = false
+              this.home = true
+              
+              
             } 
           
-            if (this.currentRoute == "/project") {
-              this.project = true
-            } else {
-              this.project = false
-            }
+          if (this.currentRoute == "/project") {
+            this.project = true
+            this.about = false
+            this.home = false
+          }
           
             if (this.currentRoute == "/about") {
+              this.project = false
               this.about = true
-            } else {
-              this.about = false
+              this.home = false
             }
             
         }
@@ -54,8 +66,7 @@ export class HeaderComponent {
     });
   }
 
-  project= false
-  about = false
+
   routeSubscription:any
 
 ngOnInit() {

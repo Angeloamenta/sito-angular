@@ -1,25 +1,83 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h1 class="text-web">Qualcosa su di me</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <p class="text-web mt-3">                 
+<div class="container pb-4">
+    <div class="row row-about d-flex justify-content-center mt-5 mb-5">
+        <div class="about-sx col-12 col-sm-8">
+            <h1 class="title-about mb-5">Qualcosa <br class="mb-4"> su di me</h1>
+            <p class=" text-about mt-3 mb-3 p-2">  
+                Mi chiamo Angelo e sono un appassionato sviluppatore web               
                 Ho sempre avuto la passione per la tecnologia. Che si trattasse di PC, smartphone o videogame.<br class="mb-2">
-                Cercando tra i lavori possibili in ambito IT mi sono imbattuto nel cooding e da allora, dopo aver visto le soddisfazioni che mi dava ed essermi appassionato, ho deciso di apprendere quanto più possibile per farne il mio lavoro.<br class="mb-2">
-
+                Sono una persona curiosa, mi piace la sensazione che mi restituisce la scoperta di qualcosa di nuovo. <br>
                 Creo siti Web responsive facili da consultare sia in <span>mobile</span> che in modalità <span>desktop</span>. <br>
                 L'area dove sono più ferrato è lo sviluppo <span>front-end</span> con tecnologie com <span>HTML</span>,<span>CSS</span>, <span>JAVASCRIPT</span>.
                 <br class="mb-2">
 
-                Ho maturato anche esperienza di sviluppatore full-stack con <span>Wordpress</span>,<span>WooCommerce</span>, <span>PHP</span> e <span>MySQL</span>
+                Ho maturato anche esperienza di sviluppatore full-stack con <span>Wordpress</span>,<span>WooCommerce</span>, <span>PHP</span> e <span>MySQL</span> tramite lavori recenti svolti per conto di agenzie o per aziende.
             </p>
         </div>
+            <div class="d-none d-sm-block col-sm-3 about-img">
+                <div class="black">
+
+                </div>
+                <div class="">
+                    <img src="../../../assets/img/IMG_9656-01-01.jpeg" alt="">
+                </div>
+        </div>
     </div>
-    <a routerLink="/" class="col-5 d-flex text-web justify-content-between align-items-center homepage">
-        <p class="m-0 p-0">Home Page</p>
-        <i class="m-0 p-0 fa-solid fa-circle-arrow-right"></i>
-    </a>
+    <div class="row container-about-bottom d-flex justify-content-center">
+        <div class="col-12 about-bottom">
+            <div class="col-12 text-center">
+                <p class="ido mb-5">
+                    COSA FACCIO
+                </p>
+            </div>
+            <div class="row w-100 list-jobs">
+                <div class="col text-center">
+                    <ul class="p-0">
+                        <li class="d-flex align-items-center justify-content-center"><span class="dot-orange"></span> <h2 class="my-work">WEB DEVELOPER </h2></li>
+                        <li class="d-flex align-items-center justify-content-center"><span class="dot-orange"></span> <h2 class="my-work">FRONT-END DEVELOPER</h2></li>
+                        <li class="d-flex align-items-center justify-content-center"><span class="dot-orange"></span> <h2 class="my-work">WORDPRESS DEVELOPER</h2></li>
+                        <li class="d-flex align-items-center justify-content-center"><span class="dot-orange"></span> <h2 class="my-work">E-COMMERCE DEVELOPER</h2></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-12 col-sm-6">
+            <p class="experience">ESPERIEZA</p>
+        </div>
+        <div class="col-12 col-sm-6">
+            <ul class="p-0">
+                <li *ngFor="let job of jobs" class="experience-job row d-flex align-items-center justify-content-between">
+                    <div>
+                        <p class="job-time">
+                            {{job.date}}
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="job-title">{{job.job}}</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="row">
+            <div class=" col-12 col-sm-6">
+                <div>
+                    <h2 class=" text-center mt-3">Il mio stack</h2>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <img class="w-50" src="../../../assets/img/Angelo Amenta 062023.png" alt="">
+                </div>
+            </div>
+
+             <div class=" col-12 col-sm-6">
+                <div>
+                    <h2 class="text-center">Attestati</h2>
+                </div>
+                <div class="d-flex justify-content-center">
+                <img class="w-50" src="../../../assets/img/boolean.png" alt="">
+            </div>
+            </div>
+    </div> -->
 </div>

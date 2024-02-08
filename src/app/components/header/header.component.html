@@ -1,14 +1,37 @@
-<div class="container header">
-    <div class="row">
-        <div *ngIf="project" class="col-3 inner-project-card mr-3 d-flex text-web justify-content-between align-items-center homepage">
-            <p class="m-0 p-0">Progetti</p>
-        </div>
-        <div *ngIf="about" class="col-3 inner-project-card mr-3 d-flex text-web justify-content-between align-items-center homepage">
-            <p class="m-0 p-0">Su di me</p>
-        </div>
-        <a routerLink="/" class="col-5 d-flex text-web justify-content-between align-items-center homepage">
-            <p class="m-0 px-1">Home Page</p>
-            <i class="m-0 p-0 fa-solid fa-circle-arrow-right"></i>
+<div class="container header d-flex d-sm-none">
+    <div class="row d-flex w-100">
+        <a routerLink="/project" class="col-4 inner-project-card m-0 d-flex text-web justify-content-end align-items-center homepage">
+            <p class="m-0 p-0"><i [ngClass]="{'black-icon' :project}" class="fa-solid fa-list"></i></p>
         </a>
+        <a routerLink="/" class="col-4 m-0 d-flex text-web justify-content-center align-items-center homepage">
+            <p class="m-0 px-1"><i [ngClass]="{'black-icon' :home}" class="fa-solid fa-house"></i></p>
+            <!-- <i class="m-0 p-0 fa-solid fa-circle-arrow-right"></i> -->
+        </a>
+        <a routerLink="/about" class="col-4 inner-project-card m-0 d-flex text-web justify-content-start align-items-center homepage">
+            <i [ngClass]="{'black-icon' :about}" class="fa-solid fa-user"></i>
+            <!-- <p class="m-0 p-0">Su di me</p> -->
+        </a>
+    </div>
+</div>
+<div class="container header d-none d-md-block">
+    <div class="row h-100 d-flex justify-content-left w-100">
+        <div class="col-6 h-100 d-flex justify-content-left">
+            <img class="p-2" src="../../../assets/img/log-1-t.png" alt="">
+        </div>
+        <div class="col-6 h-100">
+            <div class="row h-100 d-flex justify-content-center">
+                        <a routerLink="/" class="col-2 m-0 d-flex text-web justify-content-center align-items-center homepage">
+            <p class="m-0"><span [ngClass]="{'black-icon' :home}">Home</span></p>
+            <!-- <i class="m-0 p-0 fa-solid fa-circle-arrow-right"></i> -->
+        </a>
+        <a routerLink="/project" class="col-2 inner-project-card m-0 d-flex text-web justify-content-center align-items-center homepage">
+            <p class="m-0 p-0"><span [ngClass]="{'black-icon' :project}">Project</span></p>
+        </a>
+        <a routerLink="/about" class="col-2 inner-project-card m-0 d-flex text-web justify-content-center align-items-center homepage">
+            <span [ngClass]="{'black-icon' :about}">About</span>
+            <!-- <p class="m-0 p-0">Su di me</p> -->
+        </a>
+            </div>
+        </div>
     </div>
 </div>

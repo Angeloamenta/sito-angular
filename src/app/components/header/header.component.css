@@ -1,21 +1,51 @@
 .header {
-    height: 50px;
-    padding: 10px;
+    height: 70px;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-bottom: -10px;
 }
 
 .homepage {
-    border: 1px solid var(--white);
+    /* border: 1px solid var(--white); */
     border-radius: 25px;
+}
+
+.row a {
+    font-size: 20px;
+}
+
+.row a:hover {
+    padding-bottom: 3px;
+    text-decoration: underline 2px solid var(--orange) !important;
 }
 
 .mr-3 {
     margin-right: 10px ;
 }
 
+.fa-solid {
+    font-size: 30px;
+    color: white;
+}
+
+.black-icon {
+    color: var(--black) !important;
+
+}
+
 @media (max-width: 575.98px) { 
     
     .header {
         width: 90%;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 999;
+        background: var(--orange);
+        border-radius: 10px 10px 0px 0px;
+        display: flex;
+        justify-content: center;
+
     }
 
   }

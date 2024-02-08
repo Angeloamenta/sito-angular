@@ -2,6 +2,24 @@
     padding-bottom:15px
 }
 
+.container {
+    height: 100vh;
+}
+
+.select-title {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.number {
+    display: inline-block;
+    background-color: var(--orange);
+    color: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 .img-project {
     width: 100%;
 }
@@ -15,18 +33,59 @@
 }
 
 .project-card {
-    border: 0.5px solid var(--gray);
-    border-radius: 25px;
+    /* border: 0.5px solid var(--gray); */
+    border-radius: 15px;
     animation: 1s;
-    transition: 0.5s;
+    transition: 1s;
+}
+
+
+.title-project {
+    color: gray;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 20px;
 }
 
 .project-card:hover {
-    transform: scale(1.1);
+    position: relative;
+    bottom: 5px;
 }
 
 .inner-project-card {
-    background-color: var(--black);
+    background-color: var(--gray);
+
     border-radius: 15px;
-    min-height: 300px;
+    min-height: 350px;
 }
+
+.stack {
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    padding: 10px 40px;
+    background-color: #EB5E28;
+    color: #FFFCF2;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #FFFCF2;
+    border: #EB5E28 1px solid;
+    color: #EB5E28;
+}
+
+
+@media (max-width: 575.98px) { 
+
+    .select-title {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+   
+
+  }

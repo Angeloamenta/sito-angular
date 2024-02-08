@@ -20,7 +20,7 @@
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img {
-    width: 80% !important;
+    width: 60% !important;
 }
 
 @media (max-width: 575.98px) { 
@@ -35,3 +35,5 @@
     }
 
   }
+
+ 

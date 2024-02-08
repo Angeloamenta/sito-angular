@@ -20,6 +20,8 @@ export class ProjectPageComponent {
   
     this.myProjects = this.project.getProjects()
     this.route.snapshot.paramMap.get('id')
+    console.log(this.myProjects.length);
+    
 
     if (this.route.snapshot.paramMap.get('id')) {
       this.isProject = true
